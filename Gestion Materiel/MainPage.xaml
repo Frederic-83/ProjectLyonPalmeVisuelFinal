@@ -1,0 +1,143 @@
+﻿<Page
+    x:Class="Gestion_Materiel.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Gestion_Materiel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+	<Grid Background="{ThemeResource SystemControlAcrylicWindowBrush}">
+		<RelativePanel>
+			<ListView Name="AdherentList"
+                  SelectionMode="Single"
+                  ScrollViewer.VerticalScrollBarVisibility="Auto"
+                  ScrollViewer.IsVerticalRailEnabled="True"
+                  ScrollViewer.VerticalScrollMode="Enabled"
+                  ScrollViewer.HorizontalScrollMode="Enabled"
+                  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                  ScrollViewer.IsHorizontalRailEnabled="True"
+                  Margin="20">
+				<ListView.HeaderTemplate>
+					<DataTemplate>
+						<StackPanel Orientation="Horizontal"  >
+							<TextBlock Text="Nom" Margin="8,0" Width="150" Foreground="DarkRed" />
+							<TextBlock Text="Prenom" Width="150" Foreground="DarkRed" />
+							<TextBlock Text="Rue" Width="200" Foreground="DarkRed" />
+							<TextBlock Text="CP" Width="80" Foreground="DarkRed" />
+							<TextBlock Text="Ville" Width="150" Foreground="DarkRed" />
+							<TextBlock Text="Num Telephone" Width="150" Foreground="DarkRed" />
+							<TextBlock Text="Mail" Width="150" Foreground="DarkRed" />
+							<TextBlock Text="Genre" Width="150" Foreground="DarkRed" />
+							<TextBlock Text="Pointure" Width="150" Foreground="DarkRed" />
+							<TextBlock Text="Taille" Width="150" Foreground="DarkRed" />
+						</StackPanel>
+					</DataTemplate>
+				</ListView.HeaderTemplate>
+				<ListView.ItemTemplate>
+					<DataTemplate x:DataType="local:Adherent">
+						<StackPanel Orientation="Horizontal" >
+							<TextBlock Name="Nom"
+                                    Text="{x:Bind MemberNom}"
+                                    Width="150" />
+							<TextBlock Name="Prenom"
+                                    Text="{x:Bind MemberPrenom}"
+                                    Width="150" />
+							<TextBlock Name ="rue"
+                                   Text="{x:Bind Road}"
+                                   Width="200" />
+							<TextBlock Name ="Code postal"
+                                   Text="{x:Bind Cp}"
+                                   Width="80" />
+							<TextBlock Name ="ville"
+                                   Text="{x:Bind Town}"
+                                   Width="150" />
+							<TextBlock Name ="Num Telephone"
+                                   Text="{x:Bind Telephone}"
+                                   Width="150" />
+							<TextBlock Name ="Mail"
+                                   Text="{x:Bind}"
+                                   Width="150" />
+							<TextBlock Name ="Genre"
+                                   Text="{x:Bind Gender}"
+                                   Width="150" />
+							<TextBlock Name ="Pointure"
+                                   Text="{x:Bind HeelSize}"
+                                   Width="150" />
+							<TextBlock Name ="Taille"
+                                   Text="{x:Bind Height}"
+                                   Width="150" />
+						</StackPanel>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+			<ListView Name="MaterielList"
+                  SelectionMode="Single"
+                  ScrollViewer.VerticalScrollBarVisibility="Auto"
+                  ScrollViewer.IsVerticalRailEnabled="True"
+                  ScrollViewer.VerticalScrollMode="Enabled"
+                  ScrollViewer.HorizontalScrollMode="Enabled"
+                  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                  ScrollViewer.IsHorizontalRailEnabled="True"
+                  Margin="20">
+				<ListView.HeaderTemplate>
+					<DataTemplate>
+						<StackPanel Orientation="Horizontal"  >
+							<TextBlock Text="Type" Margin="8,0" Width="150" Foreground="DarkRed" />
+							<TextBlock Text="Etat" Width="150" Foreground="DarkRed" />
+							<TextBlock Text="Marque" Width="200" Foreground="DarkRed" />
+						</StackPanel>
+					</DataTemplate>
+				</ListView.HeaderTemplate>
+				<ListView.ItemTemplate>
+					<DataTemplate x:DataType="local:Materiel">
+						<StackPanel Orientation="Horizontal" >
+							<TextBlock Name="Type"
+                                    Text="{x:Bind TypeMat}"
+                                    Width="150" />
+							<TextBlock Name="Etat"
+                                    Text="{x:Bind EtatMat}"
+                                    Width="150" />
+							<TextBlock Name ="Marque"
+                                   Text="{x:Bind MarqueMat}"
+                                   Width="200" />
+
+						</StackPanel>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+			<ListView Name="PrêtterList"
+                  SelectionMode="Single"
+                  ScrollViewer.VerticalScrollBarVisibility="Auto"
+                  ScrollViewer.IsVerticalRailEnabled="True"
+                  ScrollViewer.VerticalScrollMode="Enabled"
+                  ScrollViewer.HorizontalScrollMode="Enabled"
+                  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                  ScrollViewer.IsHorizontalRailEnabled="True"
+                  Margin="20">
+				<ListView.HeaderTemplate>
+					<DataTemplate>
+						<StackPanel Orientation="Horizontal"  >
+							<TextBlock Text="Date de retour" Margin="8,0" Width="150" Foreground="DarkRed" />
+							<TextBlock Text="etat" Width="150" Foreground="DarkRed" />
+						</StackPanel>
+					</DataTemplate>
+				</ListView.HeaderTemplate>
+				<ListView.ItemTemplate>
+					<DataTemplate x:DataType="local:Materiel">
+						<StackPanel Orientation="Horizontal" >
+							<TextBlock Name="Date de retour"
+                                    Text="{x:Bind DateRetour}"
+                                    Width="150" />
+							<TextBlock Name="etat"
+                                    Text="{x:Bind EtatPrêtter}"
+                                    Width="150" />
+
+						</StackPanel>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</RelativePanel>
+	</Grid>
+</Page>
