@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="fdegaudemarDataSet" targetNamespace="http://tempuri.org/fdegaudemarDataSet.xsd" xmlns:mstns="http://tempuri.org/fdegaudemarDataSet.xsd" xmlns="http://tempuri.org/fdegaudemarDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="fdegaudemarConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="fdegaudemarConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Forms_Test.Properties.Settings.GlobalReference.Default.fdegaudemarConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vAdherentsTableAdapter" GeneratorDataComponentClassName="vAdherentsTableAdapter" Name="vAdherents" UserDataComponentName="vAdherentsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fdegaudemarConnectionString (Settings)" DbObjectName="fdegaudemar.dbo.vAdherents" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT IdAdherents, Numero, Nom, Prenom, AdresseRue, AdresseCP, AdresseVille, Telephone, Mail, DateNaissance, Genre, Pointure, Taille FROM dbo.vAdherents</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IdAdherents" DataSetColumn="IdAdherents" />
+              <Mapping SourceColumn="Numero" DataSetColumn="Numero" />
+              <Mapping SourceColumn="Nom" DataSetColumn="Nom" />
+              <Mapping SourceColumn="Prenom" DataSetColumn="Prenom" />
+              <Mapping SourceColumn="AdresseRue" DataSetColumn="AdresseRue" />
+              <Mapping SourceColumn="AdresseCP" DataSetColumn="AdresseCP" />
+              <Mapping SourceColumn="AdresseVille" DataSetColumn="AdresseVille" />
+              <Mapping SourceColumn="Telephone" DataSetColumn="Telephone" />
+              <Mapping SourceColumn="Mail" DataSetColumn="Mail" />
+              <Mapping SourceColumn="DateNaissance" DataSetColumn="DateNaissance" />
+              <Mapping SourceColumn="Genre" DataSetColumn="Genre" />
+              <Mapping SourceColumn="Pointure" DataSetColumn="Pointure" />
+              <Mapping SourceColumn="Taille" DataSetColumn="Taille" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VMatTableAdapter" GeneratorDataComponentClassName="VMatTableAdapter" Name="VMat" UserDataComponentName="VMatTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fdegaudemarConnectionString (Settings)" DbObjectName="fdegaudemar.dbo.VMat" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CodeMAT, TypeMAT, MarqueMAT, EtatMAT FROM dbo.VMat</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CodeMAT" DataSetColumn="CodeMAT" />
+              <Mapping SourceColumn="TypeMAT" DataSetColumn="TypeMAT" />
+              <Mapping SourceColumn="MarqueMAT" DataSetColumn="MarqueMAT" />
+              <Mapping SourceColumn="EtatMAT" DataSetColumn="EtatMAT" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vMatDispoTableAdapter" GeneratorDataComponentClassName="vMatDispoTableAdapter" Name="vMatDispo" UserDataComponentName="vMatDispoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fdegaudemarConnectionString (Settings)" DbObjectName="fdegaudemar.dbo.vMatDispo" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CodeMAT, TypeMAT, MarqueMAT, EtatMAT FROM dbo.vMatDispo</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CodeMAT" DataSetColumn="CodeMAT" />
+              <Mapping SourceColumn="TypeMAT" DataSetColumn="TypeMAT" />
+              <Mapping SourceColumn="MarqueMAT" DataSetColumn="MarqueMAT" />
+              <Mapping SourceColumn="EtatMAT" DataSetColumn="EtatMAT" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vPreterTableAdapter" GeneratorDataComponentClassName="vPreterTableAdapter" Name="vPreter" UserDataComponentName="vPreterTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fdegaudemarConnectionString (Settings)" DbObjectName="fdegaudemar.dbo.vPreter" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CodeMAT, IDPret, TypeMAT, MarqueMAT, Nom, Prenom FROM dbo.vPreter</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CodeMAT" DataSetColumn="CodeMAT" />
+              <Mapping SourceColumn="IDPret" DataSetColumn="IDPret" />
+              <Mapping SourceColumn="TypeMAT" DataSetColumn="TypeMAT" />
+              <Mapping SourceColumn="MarqueMAT" DataSetColumn="MarqueMAT" />
+              <Mapping SourceColumn="Nom" DataSetColumn="Nom" />
+              <Mapping SourceColumn="Prenom" DataSetColumn="Prenom" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="fdegaudemarDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="fdegaudemarDataSet" msprop:Generator_UserDSName="fdegaudemarDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vAdherents" msprop:Generator_TableClassName="vAdherentsDataTable" msprop:Generator_TableVarName="tablevAdherents" msprop:Generator_TablePropName="vAdherents" msprop:Generator_RowDeletingName="vAdherentsRowDeleting" msprop:Generator_RowChangingName="vAdherentsRowChanging" msprop:Generator_RowEvHandlerName="vAdherentsRowChangeEventHandler" msprop:Generator_RowDeletedName="vAdherentsRowDeleted" msprop:Generator_UserTableName="vAdherents" msprop:Generator_RowChangedName="vAdherentsRowChanged" msprop:Generator_RowEvArgName="vAdherentsRowChangeEvent" msprop:Generator_RowClassName="vAdherentsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdAdherents" msprop:Generator_ColumnVarNameInTable="columnIdAdherents" msprop:Generator_ColumnPropNameInRow="IdAdherents" msprop:Generator_ColumnPropNameInTable="IdAdherentsColumn" msprop:Generator_UserColumnName="IdAdherents" type="xs:int" />
+              <xs:element name="Numero" msprop:Generator_ColumnVarNameInTable="columnNumero" msprop:Generator_ColumnPropNameInRow="Numero" msprop:Generator_ColumnPropNameInTable="NumeroColumn" msprop:Generator_UserColumnName="Numero" type="xs:int" />
+              <xs:element name="Nom" msprop:Generator_ColumnVarNameInTable="columnNom" msprop:Generator_ColumnPropNameInRow="Nom" msprop:Generator_ColumnPropNameInTable="NomColumn" msprop:Generator_UserColumnName="Nom">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Prenom" msprop:Generator_ColumnVarNameInTable="columnPrenom" msprop:Generator_ColumnPropNameInRow="Prenom" msprop:Generator_ColumnPropNameInTable="PrenomColumn" msprop:Generator_UserColumnName="Prenom">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AdresseRue" msprop:Generator_ColumnVarNameInTable="columnAdresseRue" msprop:Generator_ColumnPropNameInRow="AdresseRue" msprop:Generator_ColumnPropNameInTable="AdresseRueColumn" msprop:Generator_UserColumnName="AdresseRue" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AdresseCP" msprop:Generator_ColumnVarNameInTable="columnAdresseCP" msprop:Generator_ColumnPropNameInRow="AdresseCP" msprop:Generator_ColumnPropNameInTable="AdresseCPColumn" msprop:Generator_UserColumnName="AdresseCP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AdresseVille" msprop:Generator_ColumnVarNameInTable="columnAdresseVille" msprop:Generator_ColumnPropNameInRow="AdresseVille" msprop:Generator_ColumnPropNameInTable="AdresseVilleColumn" msprop:Generator_UserColumnName="AdresseVille" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telephone" msprop:Generator_ColumnVarNameInTable="columnTelephone" msprop:Generator_ColumnPropNameInRow="Telephone" msprop:Generator_ColumnPropNameInTable="TelephoneColumn" msprop:Generator_UserColumnName="Telephone" type="xs:decimal" />
+              <xs:element name="Mail" msprop:Generator_ColumnVarNameInTable="columnMail" msprop:Generator_ColumnPropNameInRow="Mail" msprop:Generator_ColumnPropNameInTable="MailColumn" msprop:Generator_UserColumnName="Mail" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DateNaissance" msprop:Generator_ColumnVarNameInTable="columnDateNaissance" msprop:Generator_ColumnPropNameInRow="DateNaissance" msprop:Generator_ColumnPropNameInTable="DateNaissanceColumn" msprop:Generator_UserColumnName="DateNaissance" type="xs:dateTime" />
+              <xs:element name="Genre" msprop:Generator_ColumnVarNameInTable="columnGenre" msprop:Generator_ColumnPropNameInRow="Genre" msprop:Generator_ColumnPropNameInTable="GenreColumn" msprop:Generator_UserColumnName="Genre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Pointure" msprop:Generator_ColumnVarNameInTable="columnPointure" msprop:Generator_ColumnPropNameInRow="Pointure" msprop:Generator_ColumnPropNameInTable="PointureColumn" msprop:Generator_UserColumnName="Pointure" type="xs:decimal" />
+              <xs:element name="Taille" msprop:Generator_ColumnVarNameInTable="columnTaille" msprop:Generator_ColumnPropNameInRow="Taille" msprop:Generator_ColumnPropNameInTable="TailleColumn" msprop:Generator_UserColumnName="Taille" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VMat" msprop:Generator_TableClassName="VMatDataTable" msprop:Generator_TableVarName="tableVMat" msprop:Generator_TablePropName="VMat" msprop:Generator_RowDeletingName="VMatRowDeleting" msprop:Generator_RowChangingName="VMatRowChanging" msprop:Generator_RowEvHandlerName="VMatRowChangeEventHandler" msprop:Generator_RowDeletedName="VMatRowDeleted" msprop:Generator_UserTableName="VMat" msprop:Generator_RowChangedName="VMatRowChanged" msprop:Generator_RowEvArgName="VMatRowChangeEvent" msprop:Generator_RowClassName="VMatRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodeMAT" msprop:Generator_ColumnVarNameInTable="columnCodeMAT" msprop:Generator_ColumnPropNameInRow="CodeMAT" msprop:Generator_ColumnPropNameInTable="CodeMATColumn" msprop:Generator_UserColumnName="CodeMAT" type="xs:int" />
+              <xs:element name="TypeMAT" msprop:Generator_ColumnVarNameInTable="columnTypeMAT" msprop:Generator_ColumnPropNameInRow="TypeMAT" msprop:Generator_ColumnPropNameInTable="TypeMATColumn" msprop:Generator_UserColumnName="TypeMAT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MarqueMAT" msprop:Generator_ColumnVarNameInTable="columnMarqueMAT" msprop:Generator_ColumnPropNameInRow="MarqueMAT" msprop:Generator_ColumnPropNameInTable="MarqueMATColumn" msprop:Generator_UserColumnName="MarqueMAT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EtatMAT" msprop:Generator_ColumnVarNameInTable="columnEtatMAT" msprop:Generator_ColumnPropNameInRow="EtatMAT" msprop:Generator_ColumnPropNameInTable="EtatMATColumn" msprop:Generator_UserColumnName="EtatMAT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vMatDispo" msprop:Generator_TableClassName="vMatDispoDataTable" msprop:Generator_TableVarName="tablevMatDispo" msprop:Generator_TablePropName="vMatDispo" msprop:Generator_RowDeletingName="vMatDispoRowDeleting" msprop:Generator_RowChangingName="vMatDispoRowChanging" msprop:Generator_RowEvHandlerName="vMatDispoRowChangeEventHandler" msprop:Generator_RowDeletedName="vMatDispoRowDeleted" msprop:Generator_UserTableName="vMatDispo" msprop:Generator_RowChangedName="vMatDispoRowChanged" msprop:Generator_RowEvArgName="vMatDispoRowChangeEvent" msprop:Generator_RowClassName="vMatDispoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodeMAT" msprop:Generator_ColumnVarNameInTable="columnCodeMAT" msprop:Generator_ColumnPropNameInRow="CodeMAT" msprop:Generator_ColumnPropNameInTable="CodeMATColumn" msprop:Generator_UserColumnName="CodeMAT" type="xs:int" />
+              <xs:element name="TypeMAT" msprop:Generator_ColumnVarNameInTable="columnTypeMAT" msprop:Generator_ColumnPropNameInRow="TypeMAT" msprop:Generator_ColumnPropNameInTable="TypeMATColumn" msprop:Generator_UserColumnName="TypeMAT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MarqueMAT" msprop:Generator_ColumnVarNameInTable="columnMarqueMAT" msprop:Generator_ColumnPropNameInRow="MarqueMAT" msprop:Generator_ColumnPropNameInTable="MarqueMATColumn" msprop:Generator_UserColumnName="MarqueMAT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EtatMAT" msprop:Generator_ColumnVarNameInTable="columnEtatMAT" msprop:Generator_ColumnPropNameInRow="EtatMAT" msprop:Generator_ColumnPropNameInTable="EtatMATColumn" msprop:Generator_UserColumnName="EtatMAT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="vPreter" msprop:Generator_TableClassName="vPreterDataTable" msprop:Generator_TableVarName="tablevPreter" msprop:Generator_TablePropName="vPreter" msprop:Generator_RowDeletingName="vPreterRowDeleting" msprop:Generator_RowChangingName="vPreterRowChanging" msprop:Generator_RowEvHandlerName="vPreterRowChangeEventHandler" msprop:Generator_RowDeletedName="vPreterRowDeleted" msprop:Generator_UserTableName="vPreter" msprop:Generator_RowChangedName="vPreterRowChanged" msprop:Generator_RowEvArgName="vPreterRowChangeEvent" msprop:Generator_RowClassName="vPreterRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodeMAT" msprop:Generator_ColumnVarNameInTable="columnCodeMAT" msprop:Generator_ColumnPropNameInRow="CodeMAT" msprop:Generator_ColumnPropNameInTable="CodeMATColumn" msprop:Generator_UserColumnName="CodeMAT" type="xs:int" />
+              <xs:element name="IDPret" msprop:Generator_ColumnVarNameInTable="columnIDPret" msprop:Generator_ColumnPropNameInRow="IDPret" msprop:Generator_ColumnPropNameInTable="IDPretColumn" msprop:Generator_UserColumnName="IDPret" type="xs:int" />
+              <xs:element name="TypeMAT" msprop:Generator_ColumnVarNameInTable="columnTypeMAT" msprop:Generator_ColumnPropNameInRow="TypeMAT" msprop:Generator_ColumnPropNameInTable="TypeMATColumn" msprop:Generator_UserColumnName="TypeMAT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MarqueMAT" msprop:Generator_ColumnVarNameInTable="columnMarqueMAT" msprop:Generator_ColumnPropNameInRow="MarqueMAT" msprop:Generator_ColumnPropNameInTable="MarqueMATColumn" msprop:Generator_UserColumnName="MarqueMAT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nom" msprop:Generator_ColumnVarNameInTable="columnNom" msprop:Generator_ColumnPropNameInRow="Nom" msprop:Generator_ColumnPropNameInTable="NomColumn" msprop:Generator_UserColumnName="Nom">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Prenom" msprop:Generator_ColumnVarNameInTable="columnPrenom" msprop:Generator_ColumnPropNameInRow="Prenom" msprop:Generator_ColumnPropNameInTable="PrenomColumn" msprop:Generator_UserColumnName="Prenom">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vAdherents" />
+      <xs:field xpath="mstns:IdAdherents" />
+    </xs:unique>
+    <xs:unique name="VMat_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VMat" />
+      <xs:field xpath="mstns:CodeMAT" />
+    </xs:unique>
+    <xs:unique name="vMatDispo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vMatDispo" />
+      <xs:field xpath="mstns:CodeMAT" />
+    </xs:unique>
+    <xs:unique name="vPreter_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vPreter" />
+      <xs:field xpath="mstns:CodeMAT" />
+      <xs:field xpath="mstns:IDPret" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
