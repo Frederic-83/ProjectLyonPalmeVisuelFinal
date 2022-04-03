@@ -11,7 +11,10 @@
 
 on decide de creer un tableau qui comprenne les prets des materieaux par les adherents de lyon palmes, ainsi que les dates de chaques prets.
 
-ceci est creer sur C# avec l'application Microsoft Visuel Studios.
+Cela permet a la societe Lyon palme de savoir quelles materielles sont encore disponibles, ou sinon qui l'a maintenant et quand il devra etre retournée.
+
+
+ceci est creer sur C# par l'application Microsoft Visuel Studios.
 
 ---
 
