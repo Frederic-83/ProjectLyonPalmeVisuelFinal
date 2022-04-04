@@ -7,12 +7,10 @@
 
 ## 1. Présentation d’ensemble du projet 
 
-*Définition du besoin* : organiser les listes des prets des adherents
+  *Définition du besoin* : organiser les listes des prets des adherents
 
 on decide de creer un tableau qui comprenne les prets des materieaux par les adherents de lyon palmes, ainsi que les dates de chaques prets.
-
-Cela permet a la societe Lyon palme de savoir quelles materielles sont encore disponibles, ou sinon qui l'a maintenant et quand il devra etre retournée.
-
+Cela permet a la societe Lyon palme de savoir quelles materielles sont encore disponibles, ou sinon qui l'a maintenant et quand il devra etre retournée
 
 ceci est creer sur C# par l'application Microsoft Visuel Studios.
 
