@@ -40,12 +40,12 @@ $ Login Heroku
 
 Pour que le deployement peut être possible, on doit aussi assurer qu’on peut accéder à GitHub/Lab. On va donc entrer un répertoire Github sur Heroku Cli. On utilise mone répertoire comme exemple :
 ```
-$ git clone https://github.com/Frederic-83/FredericAuthenticate
+$ git clone https://github.com/Frederic-83/projetCsharp
 ```
 
 Pour mieux incorporer votre future application avec le répertorie, on doit entrer dans le même répertorie. 
 ```
-$ cd FredericAuthenticate
+$ cd projetCsharp
 ```
 
 ### Créer l’Application Heroku 
@@ -57,7 +57,7 @@ $ Heroku create
 
 Par contre, on peut nommer notre application en écrivant le nom après create (on note qu'on ne peut pas utiliser les espaces et les lettres en majuscule): 
 ```
-$ Heroku create django-frederic
+$ Heroku create projetcsharpfrederic
 ```
 
 Dès que l’application est créée, on peut le déployer avec le code suivant : 
@@ -90,7 +90,7 @@ Lorsque cette commande est exécutée, on peut voir tous les logs depuis la cré
 
 Un Procfile est un fichier texte dans le répertoire racine de votre application, pour déclarer explicitement quelle commande doit être exécutée pour démarrer votre application. Pour le créer, on entre la commande suivante : 
 ```
-web: django-frederic FredericAuthenticate
+web: projetcsharpfrederic projetCsharp
 ```
 
 Le code suivant peut être utiliser dans le cas qu’on utilise un fichier ProcFile.windows 
