@@ -58,6 +58,12 @@ Par contre, on peut nommer notre application en écrivant le nom après create (
 $ Heroku create projetcsharpfrederic
 ```
 
+on peut aussi modifier ce ligne de commande pour que qu'on peut changer le location geographique par defaut de l'application.
+dans ce cas, on met m'application de nationalite d'européen.
+```
+$ Heroku create projetcsharpfrederic --region eu
+```
+
 Dès que l’application est créée, on peut le déployer avec le code suivant : 
 ```
 $ git push heroku main
