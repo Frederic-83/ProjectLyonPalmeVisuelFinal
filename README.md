@@ -34,7 +34,68 @@ Pour loger sur heroku Cli: entrer la commande suivante, et puis entrer votre nom
 $ Login Heroku
 ```
 
-### Accéder à GitHub 
+## 2. Utiliser l'application sur une machine de développement
+
+### 2.0. Environnement logiciel requis
+
+Linux avec Python 3.8 (MacOS non testé)
+Un terminal pour configurer le projet et lancer les commandes d'administration de Django
+Un navigateur web pour naviguer sur le site
+
+
+### 2.1. Récupération du dépôt git
+```
+git clone https://github.com/'username'/'nom du repertoire'/
+```
+### 2.2. Création et activation de l'environnement Python virtuel
+
+Se placer dans le répertoire du projet, puis exécuter les commandes suivantes.
+
+Sous Linux :
+```
+sudo pip3 install virtualenv
+virtualenv venv
+source venv/bin/activate
+```
+
+### 2.3. Installation des dépendances requises avec PIP
+Créer un fichier requirements.txt puis tapez la commande : 'pip freeze'
+
+Coller le résultat de la commande dans le requirements.txt
+```
+python -m pip install -r requirements.txt
+```
+### 2.4. Création et exécution des migrations
+
+Les migrations sont la manière par laquelle Django propage des modifications que vous apportez à des modèles (ajout d’un champ, suppression d’un modèle, etc.) dans un schéma de base de données.
+
+Exécuter dans cet ordre les commandes :
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+Notes
+La commande migrate exécute les migrations. Cette fois-ci, elle a permis de créer la base de données (fichier SQLitedb.sqlite3) et d'y créer les tables correspondant aux modèles.
+La commande makemigrations est responsable de la création de nouvelles migrations en fonction des modifications apportées aux modèles.
+
+Comme le projet contient déjà le fichier de migration initial, et qu'aucune modification n'a été apportée aux modèles, cette commande n'aura aucune incidence cette fois-ci.
+
+Elle devra cependant être exécutée préalablement à la commande migrate chaque fois qu'une modification sera apportée aux modèles (fichier models.py du répertoire ppefrais).
+
+
+### 2.5. Démarrage du serveur de développement
+Saisir la commande
+python manage.py runserver
+afin de démarrer le serveur de développement. Le serveur fonctionne sur le port 8000 à l'adresse 127.0.0.1.
+Pour accéder au site, il faut donc saisir l'adresse suivante dans le navigateur web :
+```
+http://127.0.0.1:8000/
+```
+et, sur la page de connexion qui s'affiche, saisir les identifiants qui ont été créer auparavant.
+
+## 3. Deployer l'application
+
+### 3.1 Accéder à GitHub 
 
 Pour que le deployement peut être possible, on doit aussi assurer qu’on peut accéder à GitHub/Lab. On va donc entrer un répertoire Github sur Heroku Cli. On utilise mone répertoire comme exemple :
 ```
@@ -46,7 +107,7 @@ Pour mieux incorporer votre future application avec le répertorie, on doit entr
 $ cd projetCsharp
 ```
 
-### Créer l’Application Heroku 
+### 3.2 Créer l’Application Heroku 
 
 Dès qu’on est dans le répertoire, on peut donc créer notre propre application avec la commande suivant: 
 ```
@@ -79,7 +140,7 @@ Dans ce cas, on met m'application de nationalite d'européen.
 $ Heroku create projetcsharpfrederic --region eu
 ```
 
-### Instanciation de l'application Heroku:
+### 3.3 Instanciation de l'application Heroku:
 
 Dès que l’application est créée, on peut le déployer avec le code suivant : 
 ```
@@ -91,14 +152,14 @@ Lorsque l’application est créer/déployé, on peut e voire si c’est fonctio
 $ heroku ps:scale web=1
 ```
 
-### (Si le code retourne un message d’erreur, on doit recommencer le code au-dessus) 
+(Si le code retourne un message d’erreur, on doit recommencer le code au-dessus) 
 
 Comme l’appli est déployé, on peut le voir à n’importe quel moment : 
 ```
 $ Heroku open
 ```
 
-### View Logs : 
+### 3.4 View Logs : 
 
 Lorsque le site web de l’appli est créer, on peut voir le(s) logs associer avec la commande suivante : 
 ```
@@ -107,7 +168,7 @@ $ heroku logs –tail
 
 Lorsque cette commande est exécutée, on peut voir tous les logs depuis la création. Pour sortir des logs, on doit simplement entre *ctrl+c.* 
 
-### Créer un ProcFile: 
+### 3.5 Créer un ProcFile: 
 
 Un Procfile est un fichier texte dans le répertoire racine de votre application, pour déclarer explicitement quelle commande doit être exécutée pour démarrer votre application. Pour le créer, on entre la commande suivante : 
 ```
@@ -119,7 +180,7 @@ Le code suivant peut être utiliser dans le cas qu’on utilise un fichier ProcF
 web: python manage.py runserver 0.0.0.0:5000
 ```
 
-### Installer les dépendances d'applications 
+### 3.6 Installer les dépendances d'applications 
 
 Pour pouvoir utiliser les dépendances qui sont dans le fichier requirements.text, on devrait avoir accès à u environnement virtuel, ou venv. On peut l’accéder en installant le Virtual environnement sur Heroku Cli: 
 ```
@@ -147,7 +208,7 @@ Dès qu’on a le fichier, on peut l’ouvrir est voire les dépendances qu’on
 $ pip list
 ```
 
-### Exécuter l’appli en local 
+### 3.7 Exécuter l’appli en local 
 
 (On note que l’étape précédant doit être fait avant de démarrer cet étape) 
 
