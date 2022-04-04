@@ -17,9 +17,9 @@ ceci est creer sur C# par l'application Microsoft Visuel Studios.
 
 ### 2.0. Environnement logiciel requis
 
-Linux avec Python 3.8 (MacOS non testé)
-Un terminal pour configurer le projet et lancer les commandes d'administration de Django
-Un navigateur web pour naviguer sur le site
++ Linux avec Python 3.8 (MacOS non testé)
++ Un terminal pour configurer le projet et lancer les commandes d'administration de Django
++ Un navigateur web pour naviguer sur le site
 
 
 ### 2.1. Récupération du dépôt git
