@@ -1,6 +1,5 @@
 # projetCsharp
 
-
 ---
 
 # Projet Lyon Palme 
@@ -15,24 +14,6 @@ Cela permet a la societe Lyon palme de savoir quelles materielles sont encore di
 ceci est creer sur C# par l'application Microsoft Visuel Studios.
 
 ---
-
-### Initialiser 
-
-Pour commencer, on doit installer un logiciel Heroku Cli, qu’on peut télécharger par le site officiel sous n’importe quel moyen. 
-  + Avec Ubuntu : 
-  ```
-  $ sudo snap install heroku –classic
-  ```
-
- + Avec HomeBrew :
-  ``` 
-  brew install heroku/brew/heroku
-  ```
-Dès que l'installation est complète, on peut accéder heroku dans l’invite de commande. On doit se loger avec un compte Heroku pour pouvoir l’utiliser. 
-Pour loger sur heroku Cli: entrer la commande suivante, et puis entrer votre nom d’utilisateur et votre mot de passe : 
-```
-$ Login Heroku
-```
 
 ## 2. Utiliser l'application sur une machine de développement
 
@@ -95,7 +76,25 @@ et, sur la page de connexion qui s'affiche, saisir les identifiants qui ont ét�
 
 ## 3. Deployer l'application
 
-### 3.1 Accéder à GitHub 
+### 3.1 Initialiser Heroku
+
+Pour commencer, on doit installer un logiciel Heroku Cli, qu’on peut télécharger par le site officiel sous n’importe quel moyen. 
+  + Avec Ubuntu : 
+  ```
+  $ sudo snap install heroku –classic
+  ```
+
+ + Avec HomeBrew :
+  ``` 
+  brew install heroku/brew/heroku
+  ```
+Dès que l'installation est complète, on peut accéder heroku dans l’invite de commande. On doit se loger avec un compte Heroku pour pouvoir l’utiliser. 
+Pour loger sur heroku Cli: entrer la commande suivante, et puis entrer votre nom d’utilisateur et votre mot de passe : 
+```
+$ Login Heroku
+```
+
+### 3.2 Accéder à GitHub 
 
 Pour que le deployement peut être possible, on doit aussi assurer qu’on peut accéder à GitHub/Lab. On va donc entrer un répertoire Github sur Heroku Cli. On utilise mone répertoire comme exemple :
 ```
@@ -107,7 +106,7 @@ Pour mieux incorporer votre future application avec le répertorie, on doit entr
 $ cd projetCsharp
 ```
 
-### 3.2 Créer l’Application Heroku 
+### 3.3 Créer l’Application Heroku 
 
 Dès qu’on est dans le répertoire, on peut donc créer notre propre application avec la commande suivant: 
 ```
@@ -140,7 +139,7 @@ Dans ce cas, on met m'application de nationalite d'européen.
 $ Heroku create projetcsharpfrederic --region eu
 ```
 
-### 3.3 Instanciation de l'application Heroku:
+### 3.4 Instanciation de l'application Heroku:
 
 Dès que l’application est créée, on peut le déployer avec le code suivant : 
 ```
@@ -159,7 +158,7 @@ Comme l’appli est déployé, on peut le voir à n’importe quel moment :
 $ Heroku open
 ```
 
-### 3.4 View Logs : 
+### 3.5 View Logs : 
 
 Lorsque le site web de l’appli est créer, on peut voir le(s) logs associer avec la commande suivante : 
 ```
@@ -168,7 +167,7 @@ $ heroku logs –tail
 
 Lorsque cette commande est exécutée, on peut voir tous les logs depuis la création. Pour sortir des logs, on doit simplement entre *ctrl+c.* 
 
-### 3.5 Créer un ProcFile: 
+### 3.6 Créer un ProcFile: 
 
 Un Procfile est un fichier texte dans le répertoire racine de votre application, pour déclarer explicitement quelle commande doit être exécutée pour démarrer votre application. Pour le créer, on entre la commande suivante : 
 ```
@@ -180,7 +179,7 @@ Le code suivant peut être utiliser dans le cas qu’on utilise un fichier ProcF
 web: python manage.py runserver 0.0.0.0:5000
 ```
 
-### 3.6 Installer les dépendances d'applications 
+### 3.7 Installer les dépendances d'applications 
 
 Pour pouvoir utiliser les dépendances qui sont dans le fichier requirements.text, on devrait avoir accès à u environnement virtuel, ou venv. On peut l’accéder en installant le Virtual environnement sur Heroku Cli: 
 ```
@@ -208,7 +207,7 @@ Dès qu’on a le fichier, on peut l’ouvrir est voire les dépendances qu’on
 $ pip list
 ```
 
-### 3.7 Exécuter l’appli en local 
+### 3.8 Exécuter l’appli en local 
 
 (On note que l’étape précédant doit être fait avant de démarrer cet étape) 
 
