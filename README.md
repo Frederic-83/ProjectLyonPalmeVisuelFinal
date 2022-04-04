@@ -55,7 +55,7 @@ Exécuter dans cet ordre les commandes :
 python manage.py makemigrations
 python manage.py migrate
 ```
-Notes
+### Notes:
 La commande migrate exécute les migrations. Cette fois-ci, elle a permis de créer la base de données (fichier SQLitedb.sqlite3) et d'y créer les tables correspondant aux modèles.
 La commande makemigrations est responsable de la création de nouvelles migrations en fonction des modifications apportées aux modèles.
 
@@ -66,7 +66,9 @@ Elle devra cependant être exécutée préalablement à la commande migrate chaq
 
 ### 2.5. Démarrage du serveur de développement
 Saisir la commande
+```
 python manage.py runserver
+```
 afin de démarrer le serveur de développement. Le serveur fonctionne sur le port 8000 à l'adresse 127.0.0.1.
 Pour accéder au site, il faut donc saisir l'adresse suivante dans le navigateur web :
 ```
