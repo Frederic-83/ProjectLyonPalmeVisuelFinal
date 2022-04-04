@@ -58,24 +58,25 @@ Par contre, on peut nommer notre application en écrivant le nom après create (
 $ Heroku create projetcsharpfrederic
 ```
 
-On peut aussi modifier ce ligne de commande pour que qu'on peut changer le location geographique par defaut de l'application.
-Dans ce cas, on met m'application de nationalite d'européen.
-```
-$ Heroku create projetcsharpfrederic --region eu
-```
-
 Lorsque on creer le compte, on a le possibilite de l'associer avec des addons qui permet a installer les languages de programmation dans l'application. Ces addons sont appellé buildpacks en Heroku.
 Pour plus d'informations corncernant ces buildpacks, utiliser le lien suivant:
 
 ```
 https://devcenter.heroku.com/articles/buildpacks?msclkid=c497cf43b3ea11ecbeb2825b811ddaf3
 ```
+
 Si on clique sur le language qu'on a besoin pour l'application, on note que les buildpacks d'Heroku se situe dans un repositorie Github.
 Pour l'appliquer le buildpack à l'application Heroku, on ajoute le lien du buildpack au lighe de commande heroku create.
 
 Dans cet exemple, on applique un buildpack php a un application heroku:
 ```
 $ Heroku create  --buildpack https://github.com/heroku/heroku-buildpack-php.git
+```
+
+On peut aussi modifier ce ligne de commande pour que qu'on peut changer le location geographique par defaut de l'application.
+Dans ce cas, on met m'application de nationalite d'européen.
+```
+$ Heroku create projetcsharpfrederic --region eu
 ```
 
 ### Instanciation de l'application Heroku:
