@@ -64,6 +64,17 @@ dans ce cas, on met m'application de nationalite d'européen.
 $ Heroku create projetcsharpfrederic --region eu
 ```
 
+Lorsque on creer le compte, on a le possibilite de l'associer avec des addons qui permet a installer les languages de programmation dans l'application.
+pour plus d'informations, et de voire quelles languages sont applicable avec les apps Heroku, utiliser le lien suivant:
+
+```
+https://devcenter.heroku.com/articles/buildpacks?msclkid=c497cf43b3ea11ecbeb2825b811ddaf3
+```
+
+
+
+### Instanciation de l'application Heroku:
+
 Dès que l’application est créée, on peut le déployer avec le code suivant : 
 ```
 $ git push heroku main
